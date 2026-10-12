@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>宝贝，星期六约会吗？💕</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 飘落的爱心背景 -->
+  <div id="hearts-bg" aria-hidden="true"></div>
+
+  <!-- 第一页：邀请 -->
+  <main id="ask-page" class="card">
+    <div class="capy-wrap">
+      <!-- 如果 images/ 里放了你自己的 Capylulu 图，会优先显示；没有就显示下面画的卡皮巴拉 -->
+      <img id="capy-img" class="capy-img" alt="Capylulu" hidden />
+      <div id="capy-svg-holder"></div>
+    </div>
+
+    <h1 id="title"></h1>
+    <p id="subtitle" class="subtitle"></p>
+
+    <div class="buttons">
+      <button id="yes-btn" class="btn yes">好呀 💖</button>
+      <button id="no-btn" class="btn no">不要</button>
+    </div>
+  </main>
+
+  <!-- 第二页：答应之后 -->
+  <main id="yes-page" class="card" hidden>
+    <div class="capy-wrap">
+      <img id="capy-img-happy" class="capy-img" alt="开心的 Capylulu" hidden />
+      <div id="capy-svg-holder-happy"></div>
+    </div>
+    <h1>耶！就知道你会答应 🥰</h1>
+    <p class="subtitle" id="date-line"></p>
+    <ul class="plan" id="plan-list"></ul>
+    <p class="sign" id="sign-line"></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
